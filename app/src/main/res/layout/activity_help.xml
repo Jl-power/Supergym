@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Help">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="195dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewhelp"
+        android:layout_width="315dp"
+        android:layout_height="71dp"
+        android:text="@string/msghelp"
+        android:textAlignment="center"
+        android:textColor="@color/blue_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutlocal2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="252dp"
+        android:layout_height="61dp"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/blue_500"
+        app:boxStrokeColor="@color/blue_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewhelp"
+        app:layout_constraintVertical_bias="0.144">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextemail"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_500"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textPersonName"
+            android:textColor="@color/blue_200" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="252dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/blue_200"
+        android:text="@string/recover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutlocal2"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="252dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/blue_500"
+        android:text="@string/goback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutlocal2"
+        app:layout_constraintVertical_bias="0.601" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
