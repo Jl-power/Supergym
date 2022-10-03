@@ -35,4 +35,5 @@
     <string name="reenviar">VOLVER A ENVIAR</string>
     <string name="cliente">Cliente</string>
     <string name="entrenador">Entrenador</string>
+   <string name="mensaje_sin_rutina">Solicita primero un programa de entrenamiento</string>
 </resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/inicioFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio"/>
+
+    <item
+        android:id="@+id/programaFragment"
+        android:icon="@drawable/ic_programa"
+        android:title="Programa"/>
+
+    <item
+        android:id="@+id/entrenadorFragment"
+        android:icon="@drawable/ic_entrenador"
+        android:title="Entrenador"/>
+
+    <item
+        android:id="@+id/ejercicioFragment"
+        android:icon="@drawable/ic_ejercicio"
+        android:title="Ejercicio"/>
+
+    <item
+        android:id="@+id/perfilFragment"
+        android:icon="@drawable/ic_perfil"
+        android:title="Perfil"/>
+
+
+</menu>

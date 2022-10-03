@@ -14,8 +14,6 @@
         android:theme="@style/Theme.Supergym">
         <activity android:name=".Passwordedit" />
         <activity android:name=".Token" />
-        <activity android:name=".Perfil" />
-        <activity android:name=".Contacto" />
         <activity android:name=".Menu" />
         <activity android:name=".Help" />
         <activity android:name=".Signup" />
