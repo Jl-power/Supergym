@@ -7,5 +7,6 @@
     <color name="blue_200">#67DAFF</color>
     <color name="blue_500">#03A9F4</color>
     <color name="blue_700">#007AC1</color>
-
+    <color name="green">#8FE439</color>
+    <color name="red">#DD2C00</color>
 </resources>
