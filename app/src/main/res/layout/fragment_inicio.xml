@@ -60,7 +60,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="@color/blue_700"
-            android:elevation="8dp"
             android:text="@string/mensaje_sin_rutina"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -85,17 +84,57 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/floatingActionmmenu"
+            android:elevation="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="90dp"
-            android:clickable="true"
-            android:src="@drawable/ic_fab"
-            app:backgroundTint="@color/blue_500"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:fab_addButtonColorNormal="@color/blue_500"
+            app:fab_addButtonColorPressed="@color/blue_200">
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/botonayuda"
+                app:fab_colorNormal="@color/blue_500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_ayuda"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/botonchat"
+                app:fab_colorNormal="@color/blue_500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_chat"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/rvcontainer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.223">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvminicards"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="8dp"
+                android:elevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +27,8 @@ import java.security.SecureRandom;
 
 public class Help extends AppCompatActivity {
 
-    Button buttonr,buttonb;
+    Button buttonr;
+    TextView buttonb;
     EditText textemail;
     RequestQueue requestQueue;
     JSONArray jsonArray;
@@ -36,8 +38,8 @@ public class Help extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help);
         textemail = findViewById(R.id.editTextemail);
-        buttonr = findViewById(R.id.button4);
-        buttonb = findViewById(R.id.button5);
+        buttonr = findViewById(R.id.buttonrecuperar);
+        buttonb = findViewById(R.id.buttoncancelarhelp);
 
         if(ActivityCompat.checkSelfPermission(Help.this, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(Help.this, new String[]{Manifest.permission.SEND_SMS},1);

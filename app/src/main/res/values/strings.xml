@@ -36,8 +36,17 @@
     <string name="cliente">Cliente</string>
     <string name="entrenador">Entrenador</string>
    <string name="mensaje_sin_rutina">No tienes activo un programa de\nentrenamiento\n¡Solicitalo a tu entrenador!</string>
-    <string name="titulo_main">Hola Usuario!</string>
+    <string name="titulo_main">¡Hola Usuario!</string>
     <string name="subtitulo_main">Descubre Nuestros\nEntrenadores</string>
     <string name="solicitar">solicitar</string>
     <string name="descipcion">Hola mi nombre es Ejemplo\nEdad:30\nExperiencia: 5 años\nIG: marcos_trainer\nWP: 381957624</string>
+    <string name="perfiltitulo">Datos del Perfil</string>
+    <string name="datosnombre">Nombre</string>
+    <string name="datosapellido">Apellido</string>
+    <string name="datostelefono">Teléfono</string>
+    <string name="datosobjetivo">Objetivo</string>
+    <string name="datospeso">Peso (kg)</string>
+    <string name="datosaltura">Altura (m)</string>
+    <string name="botonguardar">Guardar</string>
+    <string name="botoneditar">Editar</string>
 </resources>

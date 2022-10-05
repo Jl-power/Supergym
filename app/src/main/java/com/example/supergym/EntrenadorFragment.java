@@ -54,8 +54,11 @@ public class EntrenadorFragment extends Fragment {
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
         llm.setOrientation(LinearLayoutManager.HORIZONTAL);
         listaEntrenadores.setLayoutManager(llm);
+
         iniciarEntrenadores();
         iniciarAdapter();
+
+
         return view;
     }
 
