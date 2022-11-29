@@ -2,6 +2,7 @@ package com.example.supergym;
 
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -68,8 +69,10 @@ public class MainActivity extends AppCompatActivity{
                     String tel =jsonArray.getString(1);
                     if (pass.equals(textpass.getText().toString())){
                         Intent i = new Intent( MainActivity.this, Menu.class);
-                        Usuario user = new Usuario(textemail.getText().toString(),pass, tel);
-                        i.putExtra("user",user);
+                        SharedPreferences preferences =
+                                getSharedPreferences("usuario", MODE_PRIVATE);
+                        preferences.edit().putString("email",tel).apply();
+                        preferences.edit().putString("password",pass).apply();
                         startActivity(i);
                         finish();
                     }else{

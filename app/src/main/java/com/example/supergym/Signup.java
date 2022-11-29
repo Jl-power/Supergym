@@ -75,6 +75,9 @@ public class Signup extends AppCompatActivity {
 
                     if (response.trim().equalsIgnoreCase("registrado")) {
                         Toast.makeText(getApplicationContext(), "Registro Exitoso!", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                        startActivity(i);
+                        finish();
                     } else {
                         Toast.makeText(getApplicationContext(), "Error al registrarse", Toast.LENGTH_SHORT).show();
                     }
